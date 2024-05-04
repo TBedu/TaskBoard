@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            星河云
+        </title>
+        <link rel="/assets/img/icon.png" sizes="200x200">
+        <link href="/src/css/toolkit.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="/src/js/index.js"></script>
+    </head>
+    <body background="/assets/img/background/1.jpg" style="background-image: url(/assets/img/background/1.jpg) no-repeat;">
+        <div id="EULA_accept" class="EULA_accept">
+            <div id="refuse_touching"></div>
+            <div id="accept">
+                <h1 style="text-align: center;">最终用户许可协议</h1>
+                <p>
+                    1. 严禁使用本产品进行任何违法活动，包括但不限于黄赌毒行为以及大量占用带宽的PCDN等活动。一经发现，我们将立即停止您所有产品的使用权，并拒绝受理任何退款请求。对于涉及违法、黄赌毒活动的行为，我们将依法报警处理。<br>
+                    2. 我们郑重承诺，任何工作人员都无权查看您的VPS、虚拟主机等产品内的信息。<br>
+                    3. 在购买产品后，您将获得产品的使用权，使用期限为您购买产品时所选择的期限。<br>
+                    4. 产品到期后，您将有30天的数据下载时间。若因超时导致的数据损失，我们不负任何责任。<br>
+                    5. 以下情况导致的损失，我们无需承担责任：台风、泥石流等自然灾害；硬件因长时间资源占用过多导致的意外关机/重启；以及用户自身导致的意外或非意外事件。<br>
+                    6. 关于退款政策：若退款非因我方原因，我们将仅补偿产品剩余使用时间价值的40%；若因我方问题导致退款，我们将全额补偿从您提出问题时起，产品剩余时间的全部价值。<br>
+                    7. 若您在更改套餐类型后，工作人员未能及时更新价格，我们将根据具体情况进行处理，您可能需要补足差价，或我们将退还多收的费用作为补偿。<br>
+                    8. 禁止利用产品漏洞进行不正当获利或过度使用。一经发现，您将需要承担相应的补偿责任。<br>
+                    9. 若您通过漏洞或其他非法手段攻击我们或我们的用户的产品、网站等，我们有权立即停止您对产品的使用权，并不受理任何退款请求。
+                </p>
+                <p style="text-align: center;"><font style="font-weight: bold;">当您关闭此浮窗，或点击下方按钮后即视为同意协议</font></p>
+                <button style="margin: 0 auto;" onclick="acceptTouching();" class="button">
+                    同意协议
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="menu_bar" class="menu_bar">
+            <h1 style="position: absolute; left: 1%;">星河云</h1>
+        </div>
+        <div id="content" class="content">
+            <button style="position: relative; left: 1%; top: 2%;" onclick="changePhoto();" class="button">
+                切换背景
+                <div class="arrow-wrapper">
+                    <div class="arrow"></div>
+                </div>
+            </button>
+            <form>
+                <fieldset id="price_box" class="price_box">
+                    <legend>价格 <font style="font-size: 8px;">Price</font></legend>
+                    <table border=1>
+                        <thead>
+                            <tr>
+                                <th style="background-color: white;"></th>
+                                <th>CPU核心</th>
+                                <th>内存大小</th>
+                                <th>存储空间</th>
+                                <th>网络速率</th>
+                                <th>开放端口</th>
+                                <th>价格/月</th>
+                                <th>价格/季</th>
+                                <th>价格/半年</th>
+                                <th>价格/年</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>套餐一</td>
+                            <td>1个</td>
+                            <td>2GB</td>
+                            <td rowspan="4">60GB(HDD)</td>
+                            <td rowspan="4">10Mbps↑/50Mbps↓<br>（共享）</td>
+                            <td rowspan="4">2个(Free)</td>
+                            <td>￥25</td>
+                            <td>￥45</td>
+                            <td>￥105</td>
+                            <td>￥210</td>
+                        </tr>
+                        <tr>
+                            <td>套餐二</td>
+                            <td>2个</td>
+                            <td>4GB</td>
+                            <td>￥32</td>
+                            <td>￥57</td>
+                            <td>￥134</td>
+                            <td>￥268</td>
+                        </tr>
+                        <tr>
+                            <td>套餐三</td>
+                            <td>4个</td>
+                            <td>8GB</td>
+                            <td>￥56</td>
+                            <td>￥100</td>
+                            <td>￥235</td>
+                            <td>￥470</td>
+                        </tr>
+                        <tr>
+                            <td>套餐四</td>
+                            <td>4个</td>
+                            <td>16GB</td>
+                            <td>￥65</td>
+                            <td>￥117</td>
+                            <td>￥273</td>
+                            <td>￥576</td>
+                        </tr>
+                    </table>      
+                </fieldset>
+                <fieldset id="EULA" class="EULA">
+                    <legend>最终用户许可协议 <font style="font-size: 8px;">EULA</font></legend>
+                    <p>
+                        1.严禁使用本产品进行任何违法活动，包括但不限于黄赌毒行为以及大量占用带宽的PCDN等活动。一经发现，我们将立即停止您所有产品的使用权，并拒绝受理任何退款请求。对于涉及违法、黄赌毒活动的行为，我们将依法报警处理。<br>
+                        2.我们郑重承诺，任何工作人员都无权查看您的VPS、虚拟主机等产品内的信息。<br>
+                        3.在购买产品后，您将获得产品的使用权，使用期限为您购买产品时所选择的期限。<br>
+                        4.产品到期后，您将有30天的数据下载时间。若因超时导致的数据损失，我们不负任何责任。<br>
+                        5.以下情况导致的损失，我们无需承担责任：台风、泥石流等自然灾害；硬件因长时间资源占用过多导致的意外关机/重启；以及用户自身导致的意外或非意外事件。<br>
+                        6.关于退款政策：若退款非因我方原因，我们将仅补偿产品剩余使用时间价值的40%（按购买价算）；若因我方问题导致退款，我们将全额补偿从您提出问题时起，产品剩余时间的全部价格。（按购买价算）<br>
+                        7.若您在更改套餐类型后，工作人员未能及时更新价格，我们将根据具体情况进行处理，您可能需要补足差价，或我们将退还多收的费用作为补偿。<br>
+                        8.禁止利用产品漏洞进行不正当获利或过度使用。一经发现，您将需要承担相应的补偿责任。<br>
+                        9.若您通过漏洞或其他非法手段攻击我们或我们的用户的产品、网站等，我们有权立即停止您对产品的使用权，并不受理任何退款请求。
+                    </p>
+                </fieldset>
+            </form>
+            <p style="text-align: center;"><font style="font-weight: bold;">联系我们：<a href="https://qm.qq.com/q/3Yfi3vbXIc" style="color: red;">833078876</a></font></p>
+        </div>
+    </body>
+</html>
